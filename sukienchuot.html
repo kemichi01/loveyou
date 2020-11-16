@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        function yesok() {
+           alert("yes,I love you");
+        }
+        function nohover() {
+            let x = Math.round(Math.random()*window.innerWidth);
+            let y = Math.round(Math.random()*window.innerHeight);
+            document.getElementById('noloveyou').style.left = x + 'px';
+            document.getElementById('noloveyou').style.top = y + 'px';
+        }
+    </script>
+</head>
+<body>
+<table>
+    <h1>DO YOU LOVE ME?</h1>
+<tr>
+    <td>
+        <input style="position: absolute; left: 285px; top: 235px;" id="loveyou" type="button" value="yes" onclick="yesok()">
+    </td>
+    <td>
+        <input style="position: absolute; left: 771px; top: 96px;" id="noloveyou" type="button" value="NO" onmouseover="nohover()">
+    </td>
+</tr>
+</table>
+</body>
+</html>
